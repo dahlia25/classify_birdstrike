@@ -14,7 +14,7 @@ You can find the dataset [here](https://www.kaggle.com/faa/wildlife-strikes/home
 
 ## Project Design
 
-### Data Cleaning:
+**Data Cleaning:**
 
 The dataset did not only consist of bird species, but also other types of wildlife. To subset all bird observations, I used Selenium and BeautifulSoup to search Google, and used Google as a wildlife dictionary to find all my bird species. 
 
@@ -36,19 +36,12 @@ I performed *groupby* on the dataset to do some data exploration, and found the 
 To find a base model, I tried the following models:
 
 | Models | Train Score |
-| --- | --- |
 | Logistic Regression | 52.7 % |
-| --- | --- |
 | Naive Bayes Gaussian |41.6 % |
-| --- | --- |
 | SGD Classifier | 50.4 % |
-| --- | --- |
 |RandomForest | Classifier 87.5 % |
-| --- | --- |
 | XGBoost | 45.7% |
-| --- | --- |
 | SVM | Time cost too high |
-| --- | --- |
 | KNeighbors | Time cost too high |
 
 As shown in the table above, the *RandomForest Classifier* was my best base model.
