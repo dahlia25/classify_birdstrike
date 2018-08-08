@@ -40,7 +40,7 @@ To find a base model, I tried the following models:
 | Logistic Regression | 52.7 % |
 | Naive Bayes Gaussian | 41.6 % |
 | SGD Classifier | 50.4 % |
-|RandomForest | Classifier 87.5 % |
+|RandomForest Classifier | 87.5 % |
 | XGBoost | 45.7% |
 | SVM | Time cost too high |
 | KNeighbors | Time cost too high |
