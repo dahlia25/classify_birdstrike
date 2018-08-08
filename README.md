@@ -50,13 +50,13 @@ At first, I only used the striked/damaged plane parts as features. These feature
 
 ### Attempts to reduce overfitting
 
-**Reduce number of features:** I first fed about 30 features into the RandomForest model. Then I picked the top 10 features (using the most important features of RandomForest) and fed it to my model. But the accuracy decreased by about 10%. 
+**1. Reduce number of features:** I first fed about 30 features into the RandomForest model. Then I picked the top 10 features (using the most important features of RandomForest) and fed it to my model. But the accuracy decreased by about 10%. 
 
-**Control class weights:** It seemed that my model often misclassified small and medium-size birds. The recall rate for small birds was higher than that of medium-size birds, so I added more weight (tried weights from a range of 1.1 - 10) to the medium class. But this also did not improve my model.
+**2. Control class weights:** It seemed that my model often misclassified small and medium-size birds. The recall rate for small birds was higher than that of medium-size birds, so I added more weight (tried weights from a range of 1.1 - 10) to the medium class. But this also did not improve my model.
 
-**Add regularization parameters:** I added and controlled parameters such as max_depth and impurity, but also decreased accuracy. 
+**3. Add regularization parameters:** I added and controlled parameters such as max_depth and impurity, but also decreased accuracy. 
 
-**Tuning parameters:** I used GridSearchCV hoping it would perform its magic to help my model. But it also failed and decreased the accuracy of my model. 
+**4. Tuning parameters:** I used GridSearchCV hoping it would perform its magic to help my model. But it also failed and decreased the accuracy of my model. 
 
 After all the failed attempts, this made me realize that I was assuming too much with the classifier. I assumed that the classifier could capture the extent/degree of strikes and damages made by each species. And this is where I noticed the limitation of binary labeled data. Binary labeled data does not capture this degree of the data. It captures 1/0 (presence/absence) of a feature, literally.
 
