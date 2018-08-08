@@ -1,10 +1,10 @@
 # Project: Avians Strike Avians
 
-## Problem:
+## Problem
 
 Classify birds striking aircraft based on striked/damaged aircraft parts.
 
-## Data:
+## Data
 
 Data was obtained from Kaggle, which originated from the FAA (Federal Aviation Administration). 
 
