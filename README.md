@@ -36,13 +36,21 @@ I performed *groupby* on the dataset to do some data exploration, and found the 
 To find a base model, I tried the following models:
 
 | Models | Train Score |
+|---|---|
 | Logistic Regression | 52.7 % |
+|---|---|
 | Naive Bayes Gaussian |41.6 % |
+|---|---|
 | SGD Classifier | 50.4 % |
+|---|---|
 |RandomForest | Classifier 87.5 % |
+|---|---|
 | XGBoost | 45.7% |
+|---|---|
 | SVM | Time cost too high |
+|---|---|
 | KNeighbors | Time cost too high |
+|---|---|
 
 As shown in the table above, the *RandomForest Classifier* was my best base model.
 
