@@ -66,4 +66,3 @@ If I had more time, I would engineer my features (damaged/striked plane parts) b
 
 An interesting problem that I also wanted to look at was whether certain pairs of airlines and birds are prominent. But this problem would be for the future.
 
-I know I declared that I would not create a Flask app. But I did create one successfully where it will classify the bird size based on input. The app is still in progress in terms of styling. 
